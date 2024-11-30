@@ -19,7 +19,7 @@ Programa exclusivo no curso Full-Stack, promovido pela Rocketseat para ensino de
 <br>
 
 <p align="center">
-  <img alt="Travelgram - Perfil de Viagens" src=".github/preview.png" width="100%">
+  <img alt="Portal de Notícias" src=".github/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
