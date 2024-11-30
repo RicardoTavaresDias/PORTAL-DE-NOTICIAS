@@ -1,5 +1,5 @@
 #primary{
-  border: 2px solid green;
+  /* border: 2px solid green; */
 
   padding-block: 20px;
 
@@ -30,9 +30,9 @@
   border-inline: none;
   justify-content: space-between;
 
-  border: 3px solid pink;
+  /* border: 3px solid pink; */
 }
 
 div {
-  border: 3px solid pink;
+  /* border: 3px solid pink; */
 }

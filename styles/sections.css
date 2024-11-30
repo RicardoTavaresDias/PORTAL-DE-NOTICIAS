@@ -1,6 +1,6 @@
 /* Definido dentro do section que tiver header */
 section header { 
-  border: 3px solid maroon;
+  /* border: 3px solid maroon; */
 
   border-top: 1px solid var(--stroke-color);
   padding-block: 12px 24px;
@@ -27,11 +27,14 @@ section header {
 }
 
 
-/* ================================================================================================================ */
+
 
 
 /* Aqui é relizado tudo dentro desse Id para não ficar mencionando ele tempo todo */
 #featured {
+  /* Definido a area */
+  grid-area: featured;
+
   /* Aqui esta ajustando o tamanho das imagens e ajustando */
   img {
     height: 100%;
@@ -41,7 +44,7 @@ section header {
   }
 
   .card {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 
     border-radius: 4px;
     overflow: hidden; /* OVERFLOW é transbordamento da imagem e HIDDEN é esconda tudo que passar da caixa DIV(figure), imagem */
@@ -49,49 +52,48 @@ section header {
 
     /* Seria a mesma coisa de fazer .card::berfore mas faz no mesma classe */
     &::before {
-      /* Criando o elemento no css */
-      content: "";
-      position: absolute; /* Absolute fica no filho e Relative fica no Pai, essa é a ordem */
-      inset: 0; /* Essa propriedade Inset vai preencher a imagem dentro da DIV(figure), que valor deve ser 0*/
+        /* Criando o elemento no css */
+        content: "";
+        position: absolute; /* Absolute fica no filho e Relative fica no Pai, essa é a ordem */
+        inset: 0; /* Essa propriedade Inset vai preencher a imagem dentro da DIV(figure), que valor deve ser 0*/
 
-      /* Essa propriedade realizar degrade do card, que é do texto  */
-      background: linear-gradient( /* linear-gradient é uma função que será aplicado */
-        180deg, 
-        transparent 0%, 
-        #020617 100%
-      ); 
-      top: 50%; /* Coloca a posição na metade da imagem */
-      
+        top: 50%; /* Coloca a posição na metade da imagem */
+
+        /* Essa propriedade realizar degrade do card, que é do texto  */
+        background: linear-gradient( /* linear-gradient é uma função que será aplicado */
+          180deg, 
+          transparent 0%, 
+          #020617 100%
+        ); 
+
     }
-  }
 
+      /* Como o texto sumiu devido overflow: hidden tem que colocar posição absolute para aparecer em cima da imagem */
+      figcaption {
+        position: absolute;
+        bottom: 0; /* para fixar o texto na posição em baixo da imagem */
 
-  /* Como o texto sumiu devido overflow: hidden tem que colocar posição absolute para aparecer em cima da imagem */
-  figcaption {
-    position: absolute;
-    bottom: 0; /* para fixar o texto na posição em baixo da imagem */
+        padding: 24px;
 
-    padding: 24px;
+        /* A propriedade 'has' vai observar na tag figcaption no figure o text se tem alguma classe .text-lg, executará o padding definido de 12px */
+        &:has(.text-lg){
+          padding: 12px;
+        }
+      }
 
-    /* A propriedade 'has' vai observar na tag figcaption no figure o text se tem alguma classe .text-lg, executará o padding definido de 12px */
-    &:has(.text-lg){
-      padding: 12px;
-    }
-  }
-
-  h2 {
-    margin-top: 8px;
+      h2 {
+        margin-top: 8px;
+      }
   }
 }
 
 
 
-/* ============================================================================================================= */
 
+#weekly {
+  /* border: 4px solid green; */
 
-
-#wewkly {
-  border: 4px solid green;
+  grid-area: weekly;
 
   /* Pegar primeiro filho, que é a div, o & esta mencionando a propria ID que é #wewkly */
   &>div {
@@ -99,7 +101,7 @@ section header {
   }
 
   img {
-    height: 160px;
+    height: 160px; /**/
   }
 
   figure{
@@ -117,4 +119,47 @@ section header {
       font-weight: 800;
     }
   }
+}
+
+
+
+
+#ai {
+  grid-area: ai;
+
+  img {
+    width: 176px;
+    aspect-ratio: 1/1; /*Vai deixar a imagem quadrada 1 por 1*/
+    object-fit: cover; /*Para cobrir toda area da imagem */
+  }
+
+  h3 {
+    margin-block: 8px; /*block vai pegar em cima e em baixo como espaçamento em vertical*/
+    
+  }
+}
+
+
+
+
+aside {
+  grid-area: aside;
+}
+
+
+
+
+#more {
+  margin-top: 32px;
+
+  h3 {
+    margin-top: 8px;
+  }
+
+  img {
+  width: 72px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  }
+
 }
