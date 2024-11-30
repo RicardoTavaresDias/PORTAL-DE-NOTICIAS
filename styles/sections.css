@@ -36,6 +36,11 @@ img {
     bottom: 0; /* para fixar o texto na posição em baixo da imagem */
 
     padding: 24px;
+
+    /* A propriedade 'has' vai observar na tag figcaption no figure o text se tem alguma classe .text-lg, executará o padding definido de 12px */
+    &:has(.text-lg){
+      padding: 12px;
+    }
   }
 
   h2 {
