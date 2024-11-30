@@ -5,3 +5,28 @@ img {
   object-fit: cover; 
   border-radius: 4px;
 }
+
+.card {
+  border: 2px solid yellow;
+
+  border-radius: 4px;
+  overflow: hidden; /* OVERFLOW é transbordamento da imagem e HIDDEN é esconda tudo que passar da caixa DIV, imagem */
+  position: relative; /* A position relative tem que estar na raiz da classe para usar absolute no before */
+
+  /* Seria a mesma coisa de fazer .card::berfore mas faz no mesma classe */
+  &::before {
+    /* Criando o elemento no css */
+    content: "";
+    position: absolute; /* Absolute fica no folho e Relative fica no Pai, essa é a ordem */
+    inset: 0; /* Essa propriedade Inset vai preencher a imagem dentro da DIV, que valor deve ser 0*/
+
+    /* Essa propriedade realizar degrade do card, que é do texto  */
+    background: linear-gradient( /* linear-gradient é uma função que será aplicado */
+      180deg, 
+      transparent 0%, 
+      #020617 100%
+    ); 
+    top: 50%; /* Coloca a posição na metade da imagem */
+    
+  }
+}
