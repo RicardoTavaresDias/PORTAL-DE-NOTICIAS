@@ -19,6 +19,10 @@
   gap: 16px;
 }
 
+.gap-32 {
+  gap: 32px;
+}
+
 
 /* Deinido os tamanhos da H1 */
 .text-2xl {
@@ -26,11 +30,11 @@
 }
 
 .text-xl {
-  font: var(--h2)
+  font: var(--h2);
 }
 
 .text-lg {
-  font: var(--h3)
+  font: var(--h3);
 }
 
 .text-sm {
