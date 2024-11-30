@@ -42,6 +42,11 @@ h1, h2, h3 {
   font: inherit;
 }
 
+/*Respeitar a largura maximo da caixa no momento, sem transbordar as imagens fora da DIV*/
+img {
+  max-width: 100%; 
+}
+
 /* Class container é no HEADER */
 .container {
   border: 2px solid red;
@@ -51,13 +56,6 @@ h1, h2, h3 {
   margin-inline: auto; /* Margin horizontal automatico, que é direita e esquerda*/
 }
 
-/* utility-first */
-/* É uma classe que vai fazer algum terteminado função, nas tag NAV como no primario e como segundario da NAV*/
-.grid {
-  display: grid;
-}
-
-/* Vai mudar a NAV segundario como column em horizontal */
-.grid-flow-col {
-   grid-auto-flow: column;
+main {
+  margin-top: 40px;
 }

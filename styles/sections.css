@@ -1,0 +1,7 @@
+/* Aqui esta ajustando o tamanho das imagens e ajustando */
+img {
+  height: 100%;
+  /*faz ajuste da imgans dentro da div completando o espaço e não perder a qualidade da imagm*/
+  object-fit: cover; 
+  border-radius: 4px;
+}

@@ -1,0 +1,20 @@
+/* utility-first */
+
+/* É uma classe que vai fazer algum terteminado função, nas tag NAV como no primario e como segundario da NAV*/
+.grid {
+  display: grid;
+}
+
+/* Vai mudar a NAV segundario como column em horizontal */
+.grid-flow-col {
+   grid-auto-flow: column;
+}
+
+.grid-flow-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Colocando na class o gap das imagens do conteudo a baixo do header */
+.gap-16 {
+  gap: 16px;
+}
