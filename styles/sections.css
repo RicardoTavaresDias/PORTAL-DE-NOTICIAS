@@ -1,7 +1,7 @@
 /* Aqui esta ajustando o tamanho das imagens e ajustando */
 img {
   height: 100%;
-  /*faz ajuste da imgans dentro da div completando o espaço e não perder a qualidade da imagm*/
+  /*faz ajuste da imgans dentro da div(figure) completando o espaço e não perder a qualidade da imagm*/
   object-fit: cover; 
   border-radius: 4px;
 }
@@ -10,15 +10,15 @@ img {
   border: 2px solid yellow;
 
   border-radius: 4px;
-  overflow: hidden; /* OVERFLOW é transbordamento da imagem e HIDDEN é esconda tudo que passar da caixa DIV, imagem */
+  overflow: hidden; /* OVERFLOW é transbordamento da imagem e HIDDEN é esconda tudo que passar da caixa DIV(figure), imagem */
   position: relative; /* A position relative tem que estar na raiz da classe para usar absolute no before */
 
   /* Seria a mesma coisa de fazer .card::berfore mas faz no mesma classe */
   &::before {
     /* Criando o elemento no css */
     content: "";
-    position: absolute; /* Absolute fica no folho e Relative fica no Pai, essa é a ordem */
-    inset: 0; /* Essa propriedade Inset vai preencher a imagem dentro da DIV, que valor deve ser 0*/
+    position: absolute; /* Absolute fica no filho e Relative fica no Pai, essa é a ordem */
+    inset: 0; /* Essa propriedade Inset vai preencher a imagem dentro da DIV(figure), que valor deve ser 0*/
 
     /* Essa propriedade realizar degrade do card, que é do texto  */
     background: linear-gradient( /* linear-gradient é uma função que será aplicado */
@@ -28,5 +28,17 @@ img {
     ); 
     top: 50%; /* Coloca a posição na metade da imagem */
     
+  }
+
+  /* Como o texto sumiu devido overflow: hidden tem que colocar posição absolute para aparecer em cima da imagem */
+  figcaption {
+    position: absolute;
+    bottom: 0; /* para fixar o texto na posição em baixo da imagem */
+
+    padding: 24px;
+  }
+
+  h2 {
+    margin-top: 8px;
   }
 }
