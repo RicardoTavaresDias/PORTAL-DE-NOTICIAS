@@ -3,7 +3,6 @@
   <img alt="Logo - Rocketseat" src=".github/logo.png" width="200px" />
 </p>
 
-<br>
 <h1 align="center"> Portal de Notícias </h1>
 
 <p align="center">
