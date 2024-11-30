@@ -41,3 +41,23 @@ h1, h2, h3 {
   /* Inherit está herdado a font do body definido */
   font: inherit;
 }
+
+/* Class container é no HEADER */
+.container {
+  border: 2px solid red;
+
+  max-width: 1280px; /*Definido fixo da largura do header principal na tela*/
+  padding-inline: 32px; /* inline vai pegar esquerda e direita como espaçamento */
+  margin-inline: auto; /* Margin horizontal automatico, que é direita e esquerda*/
+}
+
+/* utility-first */
+/* É uma classe que vai fazer algum terteminado função, nas tag NAV como no primario e como segundario da NAV*/
+.grid {
+  display: grid;
+}
+
+/* Vai mudar a NAV segundario como column em horizontal */
+.grid-flow-col {
+   grid-auto-flow: column;
+}

@@ -1,0 +1,34 @@
+#primary{
+  border: 2px solid green;
+
+  padding-block: 20px;
+}
+
+div {
+  border: 3px solid pink;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* nesting css  */
+/* Esta pegando o segundo elemento da HEADER após NAV que é div */
+div:nth-child(2) {
+  /* inline vai pegar esquerda e direita como margin */
+  margin-inline: auto; 
+}
+
+/* Esta pegando o terceiro elemento da HEADER após NAV que é a segunda div */
+div:nth-child(3) {
+  /* Justify self esta pegando somento 1 elemento e jogando para final do horizonte */
+  justify-self: end;
+}
+
+#secondary {
+  padding-block: 14px; /* block vai pegar em cima e em baixo como espaçamento em vertical */
+  border: solid 1px var(--stroke-color);
+  border-inline: none;
+
+  border: 3px solid pink;
+}
