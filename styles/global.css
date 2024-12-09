@@ -56,6 +56,15 @@ img {
   margin-inline: auto; /* Margin horizontal automatico, que é direita e esquerda*/
 }
 
+/* .container - mobile */
+@media (width < 80em) {
+  .container {
+    max-width: 375px;
+    padding-inline: 16px;
+  }
+}
+
+
 main {
   margin-block: 40px;
   row-gap: 80px;

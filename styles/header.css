@@ -23,6 +23,28 @@
     }
 }
 
+/* #primary - mobile */
+@media (width < 80em) {
+  
+  #primary  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    & div:nth-child(1) {
+      & strong {
+        display: none;
+      }
+    }
+
+    & div:nth-child(3){
+      & strong {
+        display: none;
+      }
+    }
+  }
+}
+
 
 #secondary {
   padding-block: 14px; /* block vai pegar em cima e em baixo como espaçamento em vertical */
@@ -38,3 +60,18 @@ div {
   border: 3px solid pink;
 }
   */
+
+
+  /* #secondary - mobile */
+@media (width < 80em) {
+  #secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding-block: 14px;
+    
+    display: none;
+  }
+
+}
