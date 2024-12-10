@@ -22,7 +22,7 @@
 }
 
 @media (width < 80em) { 
-  
+
 }
 
 body {
@@ -81,6 +81,14 @@ main {
     "featured featured"
     "weekly weekly"
     "ai aside";
+}
+
+/* main - mobile */
+@media (width < 80em) {
+  main {
+    margin-block: 16px;
+    row-gap: 32px;
+  }
 }
 
 .content-tag {
