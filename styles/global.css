@@ -86,8 +86,11 @@ main {
 /* main - mobile */
 @media (width < 80em) {
   main {
+    display: flex;
+    flex-direction: column;
     margin-block: 16px;
     row-gap: 32px;
+    margin: 0 auto;
   }
 }
 

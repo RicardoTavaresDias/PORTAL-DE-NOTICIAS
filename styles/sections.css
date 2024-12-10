@@ -107,10 +107,10 @@ section header {
       & span {
         /* border: solid white; */
         position: absolute;
-        top: 0;
-        margin-top: 100px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 80px;
         margin-left: 12px;
-        
       }
 
       & h2 {
@@ -118,8 +118,9 @@ section header {
         font: var(--h3);
         position: absolute;
         bottom: 0;
-        margin-inline: 12px;
+        left: 0;
         margin-bottom: 12px;
+        margin-left: 12px;
         
       }
     }
@@ -183,10 +184,12 @@ section header {
         position: absolute;
         margin-top: 8px;
         margin-left: 8px;
-
       }
       & img {
+        width: 375px;
+        height: 180px;
         margin-bottom: 8px;
+
       }
     }
   }
@@ -210,13 +213,42 @@ section header {
 }
 
 
+/* ai - mobile */
+@media (width < 80em) {
+  #ai header {
+    /* border: solid red; */
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    margin-right: 0;
+     display: none;
+  }
+
+  #ai {
+    & article {
+      display: none;
+    }
+  }
+    
+}
+
+
+
+
 
 
 aside {
   grid-area: aside;
 }
 
-
+/* aside - mobile */
+@media (width < 80em) {
+  aside {
+    display: flex;
+    display: none;
+  }
+}
 
 
 #more {
