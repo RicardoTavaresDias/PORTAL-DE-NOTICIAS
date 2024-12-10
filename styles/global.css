@@ -92,12 +92,7 @@ main {
     justify-content: center;
     margin-block: 16px;
     row-gap: 32px;
-    margin: 0 auto;
-    border: solid yellow;
-    
-    
-    
-  
+    /* border: solid yellow; */
   }
 }
 

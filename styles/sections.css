@@ -212,6 +212,7 @@ section header {
   }
 }
 
+/* ============================ MOBILE ========================== */
 
 /* ai - mobile */
 @media (width < 80em) {
@@ -322,7 +323,7 @@ section header {
   }    
 }
 
-
+/* ============================ FIM MOBILE ========================== */
 
 
 
@@ -334,8 +335,7 @@ aside {
 /* aside - mobile */
 @media (width < 80em) {
   aside {
-    display: flex;
-    /* display: none; */
+    padding-bottom: 40px;
   }
 }
 
