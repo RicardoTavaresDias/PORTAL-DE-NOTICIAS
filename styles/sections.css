@@ -27,9 +27,6 @@ section header {
 }
 
 
-
-
-
 /* Aqui é relizado tudo dentro desse Id para não ficar mencionando ele tempo todo */
 #featured {
   /* Definido a area */
@@ -88,6 +85,46 @@ section header {
 }
 
 
+/* #featured - mobile */
+@media (width < 80em) {
+  #featured {
+    display: flex;
+    flex-direction: column;
+
+    & .card {
+      position: relative;
+    }
+
+    & figcaption {
+      /* border: solid red; */
+      position: absolute;
+      bottom: 0;
+      width: 328px;
+      height: 208px;
+
+      & span {
+        /* border: solid white; */
+        position: absolute;
+        bottom: 36%;
+        left: 5%;
+      }
+
+      & h2 {
+        /* border: solid yellow; */
+        font: var(--h3);
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+      }
+    }
+
+    & div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
 
 
 #weekly {
@@ -121,6 +158,10 @@ section header {
   }
 }
 
+
+@media (width < 80em) {
+  
+}
 
 
 

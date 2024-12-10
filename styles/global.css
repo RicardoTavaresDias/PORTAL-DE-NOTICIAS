@@ -21,6 +21,10 @@
   --text-sm: 400 14px/160% var(--font-family);
 }
 
+@media (width < 80em) { 
+  
+}
+
 body {
   font-family: "Archivo", sans-serif;
   color: var(--text-color-primary);
