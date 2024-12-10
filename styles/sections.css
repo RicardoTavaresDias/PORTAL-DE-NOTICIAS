@@ -215,22 +215,111 @@ section header {
 
 /* ai - mobile */
 @media (width < 80em) {
-  #ai header {
-    /* border: solid red; */
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 24px;
-    margin-right: 0;
-     display: none;
-  }
-
   #ai {
-    & article {
-      display: none;
-    }
-  }
+    /* border: solid rosybrown; */
+    position: relative;
     
+   & header {
+      /* border: solid red; */
+      width: 328px;
+      display: flex;
+      justify-content: space-between;
+ 
+    }
+
+    & div span {
+      width: 152px;
+    }
+
+    & div:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      /* border: solid blue; */
+      width: 232px;
+
+    }
+
+    & article {
+      /* border: solid black; */
+      display: flex;
+      flex-direction: row-reverse;
+
+  
+      /* BLoco troca do texto Inteligência Artificial Empresa*/
+      &:nth-child(1) h3 {
+        font-size: 0;
+          &::after {
+            content: "Empresa surpreende o mundo ao anunciar um alg..";
+            font: var(--h3);
+          }
+
+          & + p {
+            font-size: 0;
+            &::after {
+              content: "Em um avanço surpreendente da inteligência artificial, uma empresa anuncia o desenvolvimento de um algoritmo capaz de prever eventos f..";
+              font: var(--text-sm);
+            }
+          }
+        }
+
+
+        /* BLoco troca do texto Inteligência Artificial Dispositivo*/
+      &:nth-child(2) h3 {
+        font-size: 0;
+          &::after {
+            content: "Dispositivo portátil promete traduzir instantaneamente..";
+            font: var(--h3);
+          }
+
+          & + p {
+            font-size: 0;
+            &::after {
+              content: "Em um mundo cada vez mais conectado, a comunicação sem fronteiras é essencial. Nesse contexto, um dispositivo portátil sur..";
+              font: var(--text-sm);
+            }
+          }
+        }
+
+        /* BLoco troca do texto Inteligência Artificial Criados*/
+      &:nth-child(3) h3 {
+        font-size: 0;
+          &::after {
+            content: "Criados para auxiliar idosos, robôs de companhia ganha..";
+            font: var(--h3);
+          }
+
+          & + p {
+            font-size: 0;
+            &::after {
+              content: "A tecnologia não só avança, mas também busca tornar a vida mais significativa para todas as gerações. No cenário atual, os robôs sociais..";
+              font: var(--text-sm);
+            }
+          }
+        }
+
+        /* BLoco troca do texto Inteligência Artificial Aplicativo*/
+      &:nth-child(4) h3 {
+        font-size: 0;
+          &::after {
+            content: "Aplicativo utiliza inteligência artificial para ajudar usuári..";
+            font: var(--h3);
+          }
+
+          & + p {
+            font-size: 0;
+            &::after {
+              content: "No turbilhão da vida moderna, onde distrações são abundantes, um aplicativo inovador surge como um aliado indispensável para quem bus..";
+              font: var(--text-sm);
+            }
+          }
+        }
+    }
+
+    & img {
+      /* border: solid red; */
+      width: 80px; 
+    } 
+  }    
 }
 
 
@@ -246,7 +335,7 @@ aside {
 @media (width < 80em) {
   aside {
     display: flex;
-    display: none;
+    /* display: none; */
   }
 }
 
