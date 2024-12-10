@@ -32,6 +32,11 @@
     align-items: center;
     
     & div:nth-child(1) {
+
+      & img {
+        cursor: pointer;
+      }
+
       & strong {
         display: none;
       }
@@ -51,15 +56,10 @@
   border: solid 1px var(--stroke-color);
   border-inline: none;
   justify-content: space-between;
-
+  
   /* border: 3px solid pink; */
 }
 
-/*
-div {
-  border: 3px solid pink;
-}
-  */
 
 
   /* #secondary - mobile */
@@ -67,12 +67,22 @@ div {
   #secondary {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 32px;
     padding-block: 14px;
+    padding-left: 25px;
     margin-bottom: 24px;
-    
-    /* display: none; */
+    text-align: end;
+
   }
 
+
+/* MENU MOBILE*/
+
+  /* has é quando tiver o id menu-fechado executar display none no id secondary */
+  .container {
+    &:has(.menu-fechado) #secondary {
+      display: none;
+    }
+  }
 }
