@@ -63,8 +63,8 @@ img {
 /* .container - mobile */
 @media (width < 80em) {
   .container {
-    max-width: 375px;
-    padding-inline: 10px;
+    /* max-width: 375px; */
+    padding-inline: 16px;
   }
 }
 

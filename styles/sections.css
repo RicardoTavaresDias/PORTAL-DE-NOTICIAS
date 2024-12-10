@@ -93,6 +93,7 @@ section header {
     flex-direction: column;
     padding-bottom: 0;
     margin-bottom: 0;
+    align-items: center;
 
     & .card {
       position: relative;
@@ -139,6 +140,7 @@ section header {
   /* border: 4px solid green; */
 
   grid-area: weekly;
+  
 
   /* Pegar primeiro filho, que é a div, o & esta mencionando a propria ID que é #wewkly */
   &>div {
@@ -182,19 +184,34 @@ section header {
       position: relative;
 
       & span {
+        align-self: flex-start;
         position: absolute;
         margin-top: 8px;
         margin-left: 8px;
       }
       & img {
-        width: 375px;
-        height: 180px;
         margin-bottom: 8px;
-
+        width: 100%;
       }
+
+      & p {
+        text-align: start;
+      }
+
+    }
+
+    & figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* padding-inline: 16px; */
+      margin: 0;
     }
   }
 }
+
+
+
 
 
 
@@ -220,6 +237,7 @@ section header {
   #ai {
     /* border: solid rosybrown; */
     position: relative;
+
     
    & header {
       /* border: solid red; */
