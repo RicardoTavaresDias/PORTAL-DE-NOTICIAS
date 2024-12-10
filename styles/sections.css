@@ -222,7 +222,6 @@ section header {
     
    & header {
       /* border: solid red; */
-      width: 328px;
       display: flex;
       justify-content: space-between;
  
@@ -243,6 +242,7 @@ section header {
     & article {
       /* border: solid black; */
       display: flex;
+      justify-content: center;
       flex-direction: row-reverse;
 
   
