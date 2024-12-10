@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img alt="Logo - Rocketseat" src=".github/logo.png" width="200px" />
+  <img alt="Logo - Rocketseat" src="./github/logo.png" width="200px" />
 </p>
 
 <h1 align="center"> Portal de Notícias </h1>
@@ -19,7 +19,7 @@ Programa exclusivo no curso Full-Stack, promovido pela Rocketseat para ensino de
 <br>
 
 <p align="center">
-  <img alt="Portal de Notícias" src=".github/preview.png" width="100%">
+  <img alt="Portal de Notícias" src="./github/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
