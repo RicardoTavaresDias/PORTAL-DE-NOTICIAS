@@ -192,6 +192,7 @@ section header {
       & img {
         margin-bottom: 8px;
         width: 100%;
+        height: auto;
       }
 
       & p {
